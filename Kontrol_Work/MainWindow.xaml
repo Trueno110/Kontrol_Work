@@ -1,0 +1,32 @@
+﻿<Window x:Class="Kontrol_Work.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kontrol_Work"
+        mc:Ignorable="d"
+        Title="Автосалон" Height="600" Width="820">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="120*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Image Margin="22,12,22,15" Source="/yamazaki-biscuits-company-ybc-logo-5B1F470A11-seeklogo.com.png" Stretch="Fill"/>
+        <Button Name="Customers"  Grid.Column="0" Grid.Row="1" Content="Покуатели"  Background="DarkRed" Foreground="White" Margin="2" Click="Customers_Click"/>
+        <Button Name="Marki" Grid.Column="0" Grid.Row="2" Content="Марки"  Background="DarkRed" Foreground="White" Margin="2" Click="Marki_Click"/>
+        <Button Name="Sotrudniki" Grid.Column="0" Grid.Row="3" Content="Сотрудники"  Background="DarkRed" Foreground="White" Margin="2"  Click="Sotrudniki_Click"/>
+        <Button Name="Auto" Grid.Column="0" Grid.Row="4" Content="Автомобили"  Background="DarkRed" Foreground="White" Margin="2" Click="Auto_Click"/>
+        <Button Name="Selling" Grid.Column="0" Grid.Row="5" Content="Продажи"  Background="DarkRed" Foreground="White" Margin="2" Click="Selling_Click"/>
+        <TextBlock Text="Автосалон" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Frame Name="MainFraim" Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" NavigationUIVisibility="Hidden"  />
+    </Grid>
+</Window>
